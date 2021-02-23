@@ -1,0 +1,12 @@
+[module/clickdate]
+type = custom/script
+format-prefix =  
+format-prefix-foreground = ${colors.accent}
+exec = date +'  %a. %d %b. %Y ~ %H:%M'
+tail = false
+interval = 5
+; If you set the current version of t’bird to close from your 
+; Calendar tab (rather than email tab) the right click will open to your calendar. 
+; Left click opens gsimplecal, if you have it installed.
+click-left = gsimplecal
+click-right = thunderbird
